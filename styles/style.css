@@ -73,6 +73,7 @@ ol {
   overflow-y: auto;
   display: grid;
   gap: 30px;
+  position: relative;
 }
 
 .content__details {
@@ -97,6 +98,7 @@ ol {
   width: 711px;
   height: 456px;
   margin-bottom: 16px;
+  position: relative;
 }
 
 video {
@@ -288,12 +290,4 @@ input {
   padding-left: 3px;
   padding-right: 3px;
   cursor: pointer;
-}
-
-.result__video-container {
-  position: relative;
-}
-
-.content__list-container {
-  position: relative;
 }
