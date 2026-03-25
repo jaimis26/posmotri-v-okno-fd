@@ -82,7 +82,7 @@ ol {
 }
 
 .title {
-  padding-bottom: 26px;
+  padding-bottom: 19px;
   font-size: 75px;
   line-height: 94%;
   font-weight: 700;
@@ -110,7 +110,7 @@ video {
 
 .content__list {
   display: grid;
-  gap: 30px;
+  gap: 27px;
 }
 
 .content__video-card {
@@ -129,9 +129,7 @@ video {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  width: 196px;
 }
 
 .search-form__fieldset-title {
@@ -151,15 +149,18 @@ video {
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
   font-weight: 400;
   font-size: 18px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
   line-height: 16.2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .visually-hidden {
@@ -175,7 +176,6 @@ video {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
-  padding-top: 4px;
 }
 
 .search-form__fieldset {
@@ -194,8 +194,7 @@ video {
 }
 
 .search-form__label:has(input:focus-visible) {
-  border: 1px solid #ffff;
-  padding: 1px;
+  outline: 1px solid #ffff;
 }
 
 input:focus {
@@ -204,18 +203,19 @@ input:focus {
 
 input {
   background-color: #1b1919;
-  border-style: solid;
-  border-color: #ffffff;
-  border-right: 0px;
-  border-left: 0;
+  border: 1px solid #ffffff;
+  border-left: none;
+  border-right: none;
   padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  width: 225px;
+  height: 27px;
 }
 
 input[type="text"] {
   font-size: 18px;
   font-weight: 400;
   color: #fff;
-  width: 225px;
   font-family: 'Fira Sans Condensed', serif;
 }
 
